@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Vans - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-left">
+    <span>Call: +91 98765 43210</span>
+    <span>Email: support@wandervans.com</span>
+  </div>
+
+  <div class="top-right">
+    <span>Follow Us:</span>
+    <a href="#" class="top-social"><i class="fa-brands fa-globe"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</div>
+
+<!-- MAIN NAVBAR -->
+<header class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="images/logo-img.png" alt="Wander Vans">
+  </div>
+
+  <!-- Menu -->
+  <nav class="menu">
+    <ul>
+      <li class="menu-dropdown">
+        <a href="index.html" class="active">Home <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html" class="active">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="camper.html">Camper</a></li>
+      <li><a href="roadtrip.html">Roadtrip</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Right Controls -->
+  <div class="nav-right">
+    <button type="button" id="darkToggle" class="toggle-btn">Dark</button>
+    <button type="button" id="rtlToggle" class="toggle-btn">RTL</button>
+    <a href="login.html" class="btn secondary">Login</a>
+  </div>
+</header>
+<section class="hero-slider">
+
+  <!-- SLIDES -->
+  <div class="slides">
+    <div class="slide active" style="background-image: url('images/h2\ hero1.jpg')"></div>
+    <div class="slide" style="background-image: url('images/h2\ hero2.jpg')"></div>
+    <div class="slide" style="background-image: url('images/h2\ hero3.jpg')"></div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+    <h1>Plan Your Perfect Road Trip</h1>
+    <p>Choose your camper, select your dates, and start your journey.</p>
+
+    <!-- BOOKING FORM -->
+    <div class="booking-box">
+      <input type="text" placeholder="Pickup Location">
+      <input type="date">
+      <input type="date">
+
+      <select>
+        <option>Camper Type</option>
+        <option>2 Berth</option>
+        <option>4 Berth</option>
+      </select>
+
+      <button>Search</button>
+    </div>
+  </div>
+
+</section>
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<section class="camper-products">
+
+  <!-- CARD 1 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/classical.jpg" alt="Camper Van">
+
+      <span class="badge">Popular</span>
+
+      <div class="hover-icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-eye"></i>
+        <i class="fa-solid fa-link"></i>
+      </div>
+
+      <div class="book-btn">Book Now</div>
+    </div>
+
+    <div class="product-info">
+      <h3>Classic Camper Van</h3>
+      <p class="price">₹2500 / day</p>
+    </div>
+  </div>
+
+
+  <!-- CARD 2 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/luxury.jpg" alt="Camper Van">
+
+      <span class="badge sale">New</span>
+
+      <div class="hover-icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-eye"></i>
+        <i class="fa-solid fa-link"></i>
+      </div>
+
+      <div class="book-btn">Book Now</div>
+    </div>
+
+    <div class="product-info">
+      <h3>Luxury Camper</h3>
+      <p class="price">₹3500 / day</p>
+    </div>
+  </div>
+
+
+  <!-- CARD 3 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/adventure van.jpg" alt="Camper Van">
+
+      <span class="badge">Best Seller</span>
+
+      <div class="hover-icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-eye"></i>
+        <i class="fa-solid fa-link"></i>
+      </div>
+
+      <div class="book-btn">Book Now</div>
+    </div>
+
+    <div class="product-info">
+      <h3>Adventure Van</h3>
+      <p class="price">₹3000 / day</p>
+    </div>
+  </div>
+
+
+  <!-- CARD 4 -->
+  <div class="product-card">
+    <div class="product-img">
+      <img src="images/familyvan.jpg" alt="Camper Van">
+
+      <span class="badge sale">Limited</span>
+
+      <div class="hover-icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-eye"></i>
+        <i class="fa-solid fa-link"></i>
+      </div>
+
+      <div class="book-btn">Book Now</div>
+    </div>
+
+    <div class="product-info">
+      <h3>Family Camper</h3>
+      <p class="price">₹4000 / day</p>
+    </div>
+  </div>
+
+</section>
+<section class="route-premium" id="planner">
+
+  <!-- LEFT CONTENT -->
+  <div class="route-left">
+    <span class="route-tag">PLAN YOUR JOURNEY</span>
+    <h2>Find Your Perfect Road Trip Route</h2>
+    <p>Enter your start and destination to discover the best camper-friendly routes across India.</p>
+
+    <div class="route-stats">
+      <div class="route-stat">
+        <i class="fa-solid fa-road"></i>
+        <strong>500+</strong>
+        <span>Routes</span>
+      </div>
+      <div class="route-stat">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <strong>120+</strong>
+        <span>Destinations</span>
+      </div>
+      <div class="route-stat">
+        <i class="fa-solid fa-van-shuttle"></i>
+        <strong>50+</strong>
+        <span>Campers</span>
+      </div>
+    </div>
+
+    <div class="route-form">
+      <div class="route-input-group">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="From (e.g. Chennai)">
+      </div>
+      <div class="route-input-group">
+        <i class="fa-solid fa-flag-checkered"></i>
+        <input type="text" placeholder="To (e.g. Ooty)">
+      </div>
+      <button>Plan Route <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <!-- RIGHT VISUAL -->
+  <div class="route-right">
+    <img src="images/map-bg.jpg" alt="Route Map">
+    <div class="route-overlay">
+      <div class="route-badge">✈ Live Route Planner</div>
+      <svg viewBox="0 0 600 250" class="curve">
+        <path d="M20 200 Q300 -50 580 200" />
+      </svg>
+      <div class="plane">✈</div>
+    </div>
+  </div>
+
+</section>
+<section class="van-experience">
+
+  <!-- BACKGROUND OVERLAY -->
+  <div class="van-bg-overlay"></div>
+
+  <!-- TOP HEADER -->
+  <div class="van-header">
+    <span class="van-tag">INSIDE YOUR CAMPER</span>
+    <h2>Everything You Need On The Road</h2>
+    <p>Our campers are fully equipped for the ultimate road trip experience</p>
+  </div>
+
+  <!-- CONTENT GRID -->
+  <div class="van-grid">
+
+    <!-- LEFT FEATURES -->
+    <div class="van-features-left">
+      <div class="van-feature-item">
+        <div class="van-icon"><i class="fa-solid fa-bed"></i></div>
+        <div>
+          <h4>Comfortable Bed</h4>
+          <p>Relax after a long journey with our premium sleeping setup</p>
+        </div>
+      </div>
+      <div class="van-feature-item">
+        <div class="van-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div>
+          <h4>Mini Kitchen</h4>
+          <p>Cook fresh meals anytime, anywhere on your trip</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER IMAGE -->
+    <div class="van-center-img">
+      <img src="images/van interior.jpg" alt="Van Interior">
+      <div class="van-img-badge">
+        <i class="fa-solid fa-star"></i>
+        <span>4.9 Rated</span>
+      </div>
+    </div>
+
+    <!-- RIGHT FEATURES -->
+    <div class="van-features-right">
+      <div class="van-feature-item">
+        <div class="van-icon"><i class="fa-solid fa-box"></i></div>
+        <div>
+          <h4>Storage Space</h4>
+          <p>Carry everything you need with smart storage solutions</p>
+        </div>
+      </div>
+      <div class="van-feature-item">
+        <div class="van-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div>
+          <h4>Power Supply</h4>
+          <p>Stay charged and connected throughout your journey</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM STATS -->
+  <div class="van-bottom-stats">
+    <div class="van-bottom-stat">
+      <strong>500+</strong>
+      <span>Happy Travelers</span>
+    </div>
+    <div class="van-bottom-stat">
+      <strong>50+</strong>
+      <span>Camper Models</span>
+    </div>
+    <div class="van-bottom-stat">
+      <strong>24/7</strong>
+      <span>Road Support</span>
+    </div>
+    <div class="van-bottom-stat">
+      <strong>100%</strong>
+      <span>Satisfaction</span>
+    </div>
+  </div>
+
+</section>
+<section class="media-gallery">
+
+  <!-- HEADER -->
+  <div class="gallery-header">
+    <span class="gallery-tag">OUR MOMENTS</span>
+    <h2>Life on the Road</h2>
+    <p>Real moments from camper journeys and unforgettable trips</p>
+
+    <!-- FILTER TABS -->
+    <div class="gallery-tabs">
+      <button class="gtab active" data-filter="all">All</button>
+      <button class="gtab" data-filter="beach">Beach</button>
+      <button class="gtab" data-filter="mountain">Mountain</button>
+      <button class="gtab" data-filter="van">Campers</button>
+      <button class="gtab" data-filter="trip">Trips</button>
+    </div>
+  </div>
+
+  <!-- MASONRY GRID -->
+  <div class="gallery-masonry">
+
+    <div class="g-item tall" data-cat="beach">
+      <img src="images/beach.jpg" alt="Beach">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Beachside Camping</h4>
+        <p>Wake up to ocean views</p>
+      </div>
+    </div>
+
+    <div class="g-item" data-cat="van">
+      <img src="images/van1.jpg" alt="Van">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Classic Camper</h4>
+        <p>Ready for the road</p>
+      </div>
+    </div>
+
+    <div class="g-item" data-cat="mountain">
+      <img src="images/mountain.jpg" alt="Mountain">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Mountain Escape</h4>
+        <p>Peace in the hills</p>
+      </div>
+    </div>
+
+    <div class="g-item wide" data-cat="trip">
+      <img src="images/trip1.jpg" alt="Trip">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Coastal Route</h4>
+        <p>Miles of open road</p>
+      </div>
+    </div>
+
+    <div class="g-item" data-cat="van">
+      <img src="images/van2.jpg" alt="Van">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Adventure Van</h4>
+        <p>Built for every terrain</p>
+      </div>
+    </div>
+
+    <div class="g-item tall" data-cat="trip">
+      <img src="images/trip2.jpg" alt="Trip">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Road Memories</h4>
+        <p>Stories worth telling</p>
+      </div>
+    </div>
+
+    <div class="g-item" data-cat="beach">
+      <img src="images/beaches.jpg" alt="Beach">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Sunset Beach</h4>
+        <p>Golden hour vibes</p>
+      </div>
+    </div>
+
+    <div class="g-item" data-cat="mountain">
+      <img src="images/forest.jpg" alt="Forest">
+      <div class="g-overlay">
+        <i class="fa-solid fa-camera"></i>
+        <h4>Forest Retreat</h4>
+        <p>Reconnect with nature</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="gallery-cta">
+    <a href="#" class="btn primary">View All Photos</a>
+  </div>
+
+</section>
+<section class="reviews">
+
+  <h2>What Our Travelers Say</h2>
+  <p class="subtitle">Real experiences from our happy campers</p>
+
+  <div class="review-container">
+
+    <!-- REVIEW 1 -->
+    <div class="review-card active">
+      <img src="images/user1.jpg" class="avatar" alt="">
+      <p>
+        Our trip was amazing! The camper was fully equipped and super comfortable.
+        Watching sunsets from the van was unforgettable.
+      </p>
+      <h4>Priya S</h4>
+      <span>Chennai</span>
+    </div>
+
+    <!-- REVIEW 2 -->
+    <div class="review-card">
+      <img src="images/user2.jpg" class="avatar" alt="">
+      <p>
+        Booking was easy and the journey felt like home on wheels.
+        Perfect for a weekend escape with friends.
+      </p>
+      <h4>Rahul K</h4>
+      <span>Bangalore</span>
+    </div>
+
+    <!-- REVIEW 3 -->
+    <div class="review-card">
+      <img src="images/user3.jpg" class="avatar" alt="">
+      <p>
+        Clean van, smooth ride, and beautiful destinations.
+        Highly recommend for anyone who loves road trips!
+      </p>
+      <h4>Ananya R</h4>
+      <span>Coimbatore</span>
+    </div>
+
+  </div>
+
+</section>
+<section class="cta-form-section" id="book-now">
+
+  <!-- LEFT CONTENT -->
+  <div class="cta-form-left">
+    <span class="cta-form-tag">READY TO EXPLORE?</span>
+    <h2>Start Your Road Trip Adventure Today</h2>
+    <p>Book your perfect camper in minutes and hit the open road with confidence.</p>
+
+    <div class="cta-form-perks">
+      <div class="cta-perk">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Free cancellation up to 48hrs</span>
+      </div>
+      <div class="cta-perk">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>24/7 roadside support</span>
+      </div>
+      <div class="cta-perk">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Fully equipped campers</span>
+      </div>
+      <div class="cta-perk">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Best price guarantee</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="cta-form-right">
+    <div class="cta-form-box">
+      <h3>Check Availability</h3>
+      <p>Fill in your details and we'll find the best camper for you</p>
+
+      <form class="cta-form">
+        <div class="cta-input-group">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Pickup Location" required>
+        </div>
+        <div class="cta-form-row">
+          <div class="cta-input-group">
+            <i class="fa-solid fa-calendar"></i>
+            <input type="date" required>
+          </div>
+          <div class="cta-input-group">
+            <i class="fa-solid fa-calendar-check"></i>
+            <input type="date" required>
+          </div>
+        </div>
+        <div class="cta-input-group">
+          <i class="fa-solid fa-van-shuttle"></i>
+          <select>
+            <option>Select Camper Type</option>
+            <option>2 Berth</option>
+            <option>4 Berth</option>
+            <option>Luxury Van</option>
+          </select>
+        </div>
+        <div class="cta-input-group">
+          <i class="fa-solid fa-users"></i>
+          <select>
+            <option>Number of Travelers</option>
+            <option>1 - 2 People</option>
+            <option>3 - 4 People</option>
+            <option>5+ People</option>
+          </select>
+        </div>
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Check Availability
+        </button>
+      </form>
+    </div>
+  </div>
+
+</section>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-col footer-location">
+      <a href="index.html" class="footer-brand" aria-label="Wander Vans home">
+        <img src="images/logo-img.png" alt="Wander Vans">
+      </a>
+      <h3>Our Location</h3>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Pickup hub at ECR Road, Chennai, Tamil Nadu, India.</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <p>+91 98765 43210<br>+91 91234 56789</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-regular fa-envelope"></i>
+        <p>support@wandervans.com</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Campers</h3>
+      <ul class="footer-list">
+        <li><a href="#">Camper Booking</a></li>
+        <li><a href="#">Beach Routes</a></li>
+        <li><a href="#">Hill Escapes</a></li>
+        <li><a href="#">Weekend Packages</a></li>
+        <li><a href="#">Route Planner</a></li>
+        <li><a href="#">Best Deals</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Information</h3>
+      <ul class="footer-list">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Booking Status</a></li>
+        <li><a href="#">Office Location</a></li>
+        <li><a href="#">Advanced Search</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Pickup Details</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-gallery-col">
+      <h3>Gallery</h3>
+      <div class="footer-gallery">
+        <img src="images/van1.jpg" alt="Camper by the road">
+        <img src="images/beach.jpg" alt="Beach road trip">
+        <img src="images/van2.jpg" alt="Traveler with camper">
+        <img src="images/trip1.jpg" alt="Coastal route">
+        <img src="images/mountain.jpg" alt="Mountain escape">
+        <img src="images/forest.jpg" alt="Forest camping">
+      </div>
+
+      <h4>Sign Up</h4>
+      <form class="footer-signup">
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button type="submit">Send</button>
+      </form>
+      <p class="footer-small">We share route ideas, not spam.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Wander Vans. All rights reserved.</p>
+    <div class="footer-payments" aria-label="Accepted payments">
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-brands fa-cc-amex"></i>
+      <i class="fa-brands fa-cc-paypal"></i>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const footerSignup = document.querySelector(".footer-signup");
+  const heroSlides = document.querySelectorAll(".hero-slide");
+  const heroDots = document.querySelectorAll(".hero-dot");
+  const heroPrev = document.querySelector(".hero-prev");
+  const heroNext = document.querySelector(".hero-next");
+  let currentSlide = 0;
+  let slideTimer;
+
+  function setSlide(index) {
+    heroSlides.forEach(function (slide, slideIndex) {
+      slide.classList.toggle("active", slideIndex === index);
+    });
+
+    heroDots.forEach(function (dot, dotIndex) {
+      dot.classList.toggle("active", dotIndex === index);
+    });
+
+    currentSlide = index;
+  }
+
+  function moveSlide(direction) {
+    const nextIndex = (currentSlide + direction + heroSlides.length) % heroSlides.length;
+    setSlide(nextIndex);
+  }
+
+  function resetSliderTimer() {
+    window.clearInterval(slideTimer);
+    slideTimer = window.setInterval(function () {
+      moveSlide(1);
+    }, 5000);
+  }
+
+  if (heroSlides.length && heroPrev && heroNext && heroDots.length) {
+    heroPrev.addEventListener("click", function () {
+      moveSlide(-1);
+      resetSliderTimer();
+    });
+
+    heroNext.addEventListener("click", function () {
+      moveSlide(1);
+      resetSliderTimer();
+    });
+
+    heroDots.forEach(function (dot, index) {
+      dot.addEventListener("click", function () {
+        setSlide(index);
+        resetSliderTimer();
+      });
+    });
+
+    setSlide(0);
+    resetSliderTimer();
+  }
+
+  if (footerSignup) {
+    footerSignup.addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+  }
+
+  document.getElementById("darkToggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+  });
+
+  document.getElementById("rtlToggle").addEventListener("click", function () {
+    const html = document.documentElement;
+    html.dir = html.dir === "rtl" ? "ltr" : "rtl";
+  });
+</script>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide() {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+  index++;
+  if (index >= slides.length) index = 0;
+}
+setInterval(showSlide, 4000);
+</script>
+
+<script>
+// GALLERY FILTER
+document.querySelectorAll(".gtab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".gtab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+    const filter = tab.getAttribute("data-filter");
+    document.querySelectorAll(".g-item").forEach(item => {
+      if (filter === "all" || item.getAttribute("data-cat") === filter) {
+        item.classList.remove("hidden");
+      } else {
+        item.classList.add("hidden");
+      }
+    });
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  let index = 0;
+  const cards = document.querySelectorAll(".review-card");
+
+  if (cards.length === 0) return; // safety check
+
+  setInterval(() => {
+    cards.forEach(card => card.classList.remove("active"));
+
+    index++;
+    if (index >= cards.length) index = 0;
+
+    cards[index].classList.add("active");
+  }, 3000);
+
+});
+</script>
+</body>
+</html>

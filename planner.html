@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Vans - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-left">
+    <span>Call: +91 98765 43210</span>
+    <span>Email: support@wandervans.com</span>
+  </div>
+
+  <div class="top-right">
+    <span>Follow Us:</span>
+    <a href="#" class="top-social"><i class="fa-brands fa-globe"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</div>
+
+<!-- MAIN NAVBAR -->
+<header class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="images/logo-img.png" alt="Wander Vans">
+  </div>
+
+  <!-- Menu -->
+  <nav class="menu">
+    <ul>
+      <li class="menu-dropdown">
+        <a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="camper.html">Camper</a></li>
+      <li><a href="roadtrip.html">Roadtrip</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Right Controls -->
+  <div class="nav-right">
+    <button type="button" id="darkToggle" class="toggle-btn">Dark</button>
+    <button type="button" id="rtlToggle" class="toggle-btn">RTL</button>
+    <a href="login.html" class="btn secondary">Login</a>
+  </div>
+</header>
+<section class="planner-hero">
+
+  <div class="planner-hero-content">
+
+    <h1>Plan Your Perfect Road Trip</h1>
+
+    <p>
+      Customize your journey, choose your camper, and explore your dream destinations.
+    </p>
+
+    <!-- MINI PLANNER BAR -->
+    <div class="planner-bar">
+
+      <input type="text" placeholder="Start Location">
+
+      <input type="text" placeholder="Destination">
+
+      <input type="date">
+
+      <button>Start Planning</button>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="trip-builder-section">
+
+  <div class="trip-builder-shell">
+
+    <div class="trip-builder-intro">
+      <span class="planner-section-tag">Trip Builder</span>
+      <h2>Build Your Trip</h2>
+      <p>Customize your road trip in just a few steps with dates, travelers, and the van that fits your journey.</p>
+
+      <div class="trip-builder-notes">
+        <div class="trip-note">
+          <strong>Flexible routes</strong>
+          <span>Shape your plan around beaches, hills, or city escapes.</span>
+        </div>
+        <div class="trip-note">
+          <strong>Camper match</strong>
+          <span>Choose compact, family, or luxury comfort before checkout.</span>
+        </div>
+        <div class="trip-note">
+          <strong>Quick summary</strong>
+          <span>See pricing and booking details before you confirm.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trip-builder-panel">
+      <div class="trip-form">
+
+        <div class="trip-group">
+          <label>Pickup Location</label>
+          <input type="text" placeholder="Enter city">
+        </div>
+
+        <div class="trip-group">
+          <label>Destination</label>
+          <input type="text" placeholder="Where to?">
+        </div>
+
+        <div class="trip-group">
+          <label>Start Date</label>
+          <input type="date">
+        </div>
+
+        <div class="trip-group">
+          <label>End Date</label>
+          <input type="date">
+        </div>
+
+        <div class="trip-group">
+          <label>Travelers</label>
+          <select>
+            <option>2 People</option>
+            <option>4 People</option>
+          </select>
+        </div>
+
+        <div class="trip-group">
+          <label>Camper Type</label>
+          <select>
+            <option>Compact</option>
+            <option>Family</option>
+            <option>Luxury</option>
+          </select>
+        </div>
+
+      </div>
+
+      <button class="trip-submit">Generate Plan</button>
+    </div>
+
+  </div>
+
+</section>
+<section class="packing-section">
+
+  <div class="packing-header">
+    <span class="packing-tag">Packing Checklist</span>
+    <h2>Pack Smart For The Road</h2>
+    <p>
+      Keep your road trip smooth with the essentials every Wander Vans traveler
+      should bring before heading out.
+    </p>
+  </div>
+
+  <div class="packing-grid">
+
+    <div class="packing-card">
+      <div class="packing-icon" style="background:#D95D39;">
+        <i class="fa-solid fa-passport"></i>
+      </div>
+      <h4>Travel Essentials</h4>
+      <ul>
+        <li><i class="fa-solid fa-check"></i>Driving license and ID proof</li>
+        <li><i class="fa-solid fa-check"></i>Booking confirmation and route details</li>
+        <li><i class="fa-solid fa-check"></i>Wallet, cards, and emergency cash</li>
+        <li><i class="fa-solid fa-check"></i>Phone charger and power bank</li>
+      </ul>
+    </div>
+
+    <div class="packing-card">
+      <div class="packing-icon" style="background:#4A2C2A;">
+        <i class="fa-solid fa-shirt"></i>
+      </div>
+      <h4>Clothing & Comfort</h4>
+      <ul>
+        <li><i class="fa-solid fa-check"></i>Layered clothes for changing weather</li>
+        <li><i class="fa-solid fa-check"></i>Comfortable shoes and sandals</li>
+        <li><i class="fa-solid fa-check"></i>Jackets, caps, and sunglasses</li>
+        <li><i class="fa-solid fa-check"></i>Personal toiletries and towels</li>
+      </ul>
+    </div>
+
+    <div class="packing-card">
+      <div class="packing-icon" style="background:#F19C76;">
+        <i class="fa-solid fa-mug-hot"></i>
+      </div>
+      <h4>Food & Daily Use</h4>
+      <ul>
+        <li><i class="fa-solid fa-check"></i>Reusable water bottles</li>
+        <li><i class="fa-solid fa-check"></i>Quick snacks and dry foods</li>
+        <li><i class="fa-solid fa-check"></i>Basic cooking supplies</li>
+        <li><i class="fa-solid fa-check"></i>Tissues, wipes, and trash bags</li>
+      </ul>
+    </div>
+
+    <div class="packing-card">
+      <div class="packing-icon" style="background:#7A533F;">
+        <i class="fa-solid fa-kit-medical"></i>
+      </div>
+      <h4>Safety & Outdoors</h4>
+      <ul>
+        <li><i class="fa-solid fa-check"></i>First-aid kit and medicines</li>
+        <li><i class="fa-solid fa-check"></i>Flashlight and insect repellent</li>
+        <li><i class="fa-solid fa-check"></i>Blanket or light sleeping gear</li>
+        <li><i class="fa-solid fa-check"></i>Weather-ready rain cover</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+<section class="route-suggest">
+
+  <div class="route-suggest-header">
+    <span class="planner-section-tag planner-section-tag-dark">Road Trip Ideas</span>
+    <h2>Suggested Road Trips</h2>
+    <p>Explore popular routes to kickstart your journey with travel time, distance, and mood already mapped out.</p>
+  </div>
+
+  <div class="route-suggest-grid">
+
+    <!-- CARD -->
+    <div class="rs-card">
+      <img src="images/r1.jpg" alt="">
+      <div class="rs-content">
+        <span class="rs-kicker">Hill Escape</span>
+        <h3>Chennai → Ooty</h3>
+        <p>550 km • 2 Days</p>
+        <div class="rs-meta">
+          <span>Cool weather</span>
+          <span>Tea estates</span>
+        </div>
+        <p class="rs-copy">Scenic climbs and refreshing halts make this one of the most loved hill routes.</p>
+        <button class="rs-route-btn">Select Route</button>
+      </div>
+    </div>
+
+    <div class="rs-card">
+      <img src="images/r2.jpg" alt="">
+      <div class="rs-content">
+        <span class="rs-kicker">Coffee Trail</span>
+        <h3>Bangalore → Coorg</h3>
+        <p>270 km • 1 Day</p>
+        <div class="rs-meta">
+          <span>Quick getaway</span>
+          <span>Easy drive</span>
+        </div>
+        <p class="rs-copy">A short, cozy route ideal for relaxed drives, cafe stops, and forest views.</p>
+        <button class="rs-route-btn">Select Route</button>
+      </div>
+    </div>
+
+    <div class="rs-card">
+      <img src="images/r3.jpg" alt="">
+      <div class="rs-content">
+        <span class="rs-kicker">Coastal Run</span>
+        <h3>Goa Coastal Drive</h3>
+        <p>300 km • 2 Days</p>
+        <div class="rs-meta">
+          <span>Beach towns</span>
+          <span>Sunset stops</span>
+        </div>
+        <p class="rs-copy">An easy-breezy route built for ocean views, food breaks, and laid-back nights.</p>
+        <button class="rs-route-btn">Select Route</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section class="experience-section">
+
+  <div class="experience-header">
+    <span class="planner-section-tag">Packages</span>
+    <h2>Choose Your Travel Experience</h2>
+    <p>Find the perfect package style for your group, comfort level, and travel mood.</p>
+  </div>
+
+  <div class="experience-grid">
+
+    <!-- FAMILY -->
+    <div class="exp-card">
+      <img src="images/family-pack.jpg" alt="">
+      <div class="exp-overlay">
+        <span class="exp-badge">Popular</span>
+        <h3>Family Trip</h3>
+        <p>Comfortable journeys with space for everyone</p>
+        <div class="exp-meta">
+          <span>Spacious van</span>
+          <span>Kid-friendly stops</span>
+        </div>
+        <button>Select</button>
+      </div>
+    </div>
+
+    <!-- FRIENDS -->
+    <div class="exp-card">
+      <img src="images/friends-pack.jpg" alt="">
+      <div class="exp-overlay">
+        <span class="exp-badge">Group Fun</span>
+        <h3>Friends Adventure</h3>
+        <p>Fun-filled road trips with your crew</p>
+        <div class="exp-meta">
+          <span>Music-ready</span>
+          <span>Flexible halts</span>
+        </div>
+        <button>Select</button>
+      </div>
+    </div>
+
+    <!-- HONEYMOON -->
+    <div class="exp-card">
+      <img src="images/honeymoon-pack.jpg" alt="">
+      <div class="exp-overlay">
+        <span class="exp-badge">Romantic</span>
+        <h3>Honeymoon Escape</h3>
+        <p>Romantic getaways with scenic views</p>
+        <div class="exp-meta">
+          <span>Private stays</span>
+          <span>Sunset routes</span>
+        </div>
+        <button>Select</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section class="trip-summary-section">
+
+  <div class="trip-summary-header">
+    <span class="planner-section-tag planner-section-tag-light">Trip Summary</span>
+    <h2>Your Trip Summary</h2>
+    <p>Review your route, travel dates, package, and payment details before reserving your van.</p>
+  </div>
+
+  <div class="summary-container">
+
+    <!-- LEFT DETAILS -->
+    <div class="summary-details">
+
+      <h3>Trip Details</h3>
+
+      <p><strong>Route:</strong> Chennai → Ooty</p>
+      <p><strong>Start Date:</strong> 10 Oct 2026</p>
+      <p><strong>End Date:</strong> 13 Oct 2026</p>
+      <p><strong>Travelers:</strong> 2 People</p>
+      <p><strong>Camper:</strong> Family Van</p>
+      <p><strong>Package:</strong> Honeymoon Escape</p>
+
+      <div class="summary-badges">
+        <span>Free route support</span>
+        <span>Pickup included</span>
+        <span>Flexible stops</span>
+      </div>
+
+    </div>
+
+    <!-- RIGHT PRICE -->
+    <div class="summary-price">
+
+      <h3>Price Details</h3>
+
+      <div class="price-line">
+        <span>Trip Cost</span>
+        <span>₹9000</span>
+      </div>
+
+      <div class="price-line">
+        <span>Taxes</span>
+        <span>₹1000</span>
+      </div>
+
+      <div class="price-total">
+        <span>Total</span>
+        <span>₹10000</span>
+      </div>
+
+      <p class="deposit">Pay ₹2000 now to reserve your trip</p>
+
+      <button>Confirm & Pay Deposit</button>
+
+    </div>
+
+  </div>
+
+</section>
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="footer-col footer-location">
+      <a href="index.html" class="footer-brand" aria-label="Wander Vans home">
+        <img src="images/logo-img.png" alt="Wander Vans">
+      </a>
+      <h3>Our Location</h3>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Pickup hub at ECR Road, Chennai, Tamil Nadu, India.</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <p>+91 98765 43210<br>+91 91234 56789</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-regular fa-envelope"></i>
+        <p>support@wandervans.com</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Campers</h3>
+      <ul class="footer-list">
+        <li><a href="#">Camper Booking</a></li>
+        <li><a href="#">Beach Routes</a></li>
+        <li><a href="#">Hill Escapes</a></li>
+        <li><a href="#">Weekend Packages</a></li>
+        <li><a href="#">Route Planner</a></li>
+        <li><a href="#">Best Deals</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Information</h3>
+      <ul class="footer-list">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Booking Status</a></li>
+        <li><a href="#">Office Location</a></li>
+        <li><a href="#">Advanced Search</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Pickup Details</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-gallery-col">
+      <h3>Gallery</h3>
+      <div class="footer-gallery">
+        <img src="images/van1.jpg" alt="Camper by the road">
+        <img src="images/beach.jpg" alt="Beach road trip">
+        <img src="images/van2.jpg" alt="Traveler with camper">
+        <img src="images/trip1.jpg" alt="Coastal route">
+        <img src="images/mountain.jpg" alt="Mountain escape">
+        <img src="images/forest.jpg" alt="Forest camping">
+      </div>
+
+      <h4>Sign Up</h4>
+      <form class="footer-signup">
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button type="submit">Send</button>
+      </form>
+      <p class="footer-small">We share route ideas, not spam.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Wander Vans. All rights reserved.</p>
+    <div class="footer-payments" aria-label="Accepted payments">
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-brands fa-cc-amex"></i>
+      <i class="fa-brands fa-cc-paypal"></i>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const footerSignup = document.querySelector(".footer-signup");
+  const heroSlides = document.querySelectorAll(".hero-slide");
+  const heroDots = document.querySelectorAll(".hero-dot");
+  const heroPrev = document.querySelector(".hero-prev");
+  const heroNext = document.querySelector(".hero-next");
+  let currentSlide = 0;
+  let slideTimer;
+
+  function setSlide(index) {
+    heroSlides.forEach(function (slide, slideIndex) {
+      slide.classList.toggle("active", slideIndex === index);
+    });
+
+    heroDots.forEach(function (dot, dotIndex) {
+      dot.classList.toggle("active", dotIndex === index);
+    });
+
+    currentSlide = index;
+  }
+
+  function moveSlide(direction) {
+    const nextIndex = (currentSlide + direction + heroSlides.length) % heroSlides.length;
+    setSlide(nextIndex);
+  }
+
+  function resetSliderTimer() {
+    window.clearInterval(slideTimer);
+    slideTimer = window.setInterval(function () {
+      moveSlide(1);
+    }, 5000);
+  }
+
+  if (heroSlides.length && heroPrev && heroNext && heroDots.length) {
+    heroPrev.addEventListener("click", function () {
+      moveSlide(-1);
+      resetSliderTimer();
+    });
+
+    heroNext.addEventListener("click", function () {
+      moveSlide(1);
+      resetSliderTimer();
+    });
+
+    heroDots.forEach(function (dot, index) {
+      dot.addEventListener("click", function () {
+        setSlide(index);
+        resetSliderTimer();
+      });
+    });
+
+    setSlide(0);
+    resetSliderTimer();
+  }
+
+  if (footerSignup) {
+    footerSignup.addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+  }
+
+  document.getElementById("darkToggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+  });
+
+  document.getElementById("rtlToggle").addEventListener("click", function () {
+    const html = document.documentElement;
+    html.dir = html.dir === "rtl" ? "ltr" : "rtl";
+  });
+</script>
+<script>
+const counters = document.querySelectorAll('.counter');
+let started = false;
+const section = document.querySelector('.family-section');
+
+function startCounting() {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    let count = 0;
+
+    const update = () => {
+      const increment = target / 100;
+
+      if (count < target) {
+        count += increment;
+        counter.innerText = Math.ceil(count);
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    update();
+  });
+}
+
+if (section && counters.length) {
+  window.addEventListener('scroll', () => {
+    const sectionTop = section.offsetTop;
+    const screenHeight = window.innerHeight;
+
+    if (!started && window.scrollY > sectionTop - screenHeight + 100) {
+      startCounting();
+      started = true;
+    }
+  });
+}
+</script>
+</body>
+</html>

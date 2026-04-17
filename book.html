@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Vans - Book Now</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-left">
+    <span>Call: +91 98765 43210</span>
+    <span>Email: support@wandervans.com</span>
+  </div>
+
+  <div class="top-right">
+    <span>Follow Us:</span>
+    <a href="#" class="top-social"><i class="fa-brands fa-globe"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</div>
+
+<!-- MAIN NAVBAR -->
+<header class="navbar">
+
+  <div class="logo">
+    <img src="images/logo-img.png" alt="Wander Vans">
+  </div>
+
+  <nav class="menu">
+    <ul>
+      <li class="menu-dropdown">
+        <a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="camper.html">Camper</a></li>
+      <li><a href="roadtrip.html">Roadtrip</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="book.html" class="active">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-right">
+    <button type="button" id="darkToggle" class="toggle-btn">Dark</button>
+    <button type="button" id="rtlToggle" class="toggle-btn">RTL</button>
+    <a href="login.html" class="btn secondary">Login</a>
+  </div>
+</header>
+
+<section class="book-hero">
+  <div class="book-hero-inner">
+    <span class="book-kicker">Online Booking</span>
+    <h1>Reserve Your Camper With A Deposit Today</h1>
+    <p>
+      Lock in your road trip online with a secure deposit payment now and pay the
+      remaining balance before pickup. Fast booking, clear pricing, and instant support.
+    </p>
+
+    <div class="book-hero-points">
+      <span><i class="fa-solid fa-circle-check"></i> 20% deposit to confirm</span>
+      <span><i class="fa-solid fa-circle-check"></i> Flexible pickup support</span>
+      <span><i class="fa-solid fa-circle-check"></i> Secure online payment options</span>
+    </div>
+  </div>
+</section>
+
+<section class="book-layout-section">
+  <div class="book-layout">
+
+    <form class="book-form-card" id="bookingForm">
+      <div class="book-card-head">
+        <span class="book-tag">Step 1</span>
+        <h2>Complete Your Booking</h2>
+        <p>Fill in your trip details, select a camper, and choose how you want to pay your deposit.</p>
+      </div>
+
+      <div class="book-block">
+        <h3>Trip Details</h3>
+        <div class="book-grid">
+          <label class="book-field">
+            <span>Pickup Location</span>
+            <input type="text" id="pickupLocation" value="Chennai" placeholder="Enter pickup city">
+          </label>
+
+          <label class="book-field">
+            <span>Destination</span>
+            <input type="text" id="destination" value="Ooty" placeholder="Where are you going?">
+          </label>
+
+          <label class="book-field">
+            <span>Pickup Date</span>
+            <input type="date" id="pickupDate" value="2026-10-10">
+          </label>
+
+          <label class="book-field">
+            <span>Return Date</span>
+            <input type="date" id="returnDate" value="2026-10-13">
+          </label>
+
+          <label class="book-field">
+            <span>Travelers</span>
+            <select id="travelers">
+              <option>2 People</option>
+              <option>4 People</option>
+              <option>6 People</option>
+            </select>
+          </label>
+
+          <label class="book-field">
+            <span>Preferred Pickup Time</span>
+            <select id="pickupTime">
+              <option>8:00 AM</option>
+              <option>10:00 AM</option>
+              <option>1:00 PM</option>
+              <option>4:00 PM</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="book-block">
+        <h3>Select Your Camper</h3>
+        <div class="book-camper-options">
+          <label class="book-camper-option">
+            <input type="radio" name="camperType" value="Classic Camper" data-rate="3500" checked>
+            <span class="book-camper-copy">
+              <strong>Classic Camper</strong>
+              <small>Rs. 3500 / day</small>
+            </span>
+          </label>
+
+          <label class="book-camper-option">
+            <input type="radio" name="camperType" value="Family Van" data-rate="4500">
+            <span class="book-camper-copy">
+              <strong>Family Van</strong>
+              <small>Rs. 4500 / day</small>
+            </span>
+          </label>
+
+          <label class="book-camper-option">
+            <input type="radio" name="camperType" value="Luxury Explorer" data-rate="6200">
+            <span class="book-camper-copy">
+              <strong>Luxury Explorer</strong>
+              <small>Rs. 6200 / day</small>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="book-block">
+        <h3>Add Optional Extras</h3>
+        <div class="book-extra-list">
+          <label class="book-extra-item">
+            <input type="checkbox" class="book-extra" value="Airport pickup" data-price="1200">
+            <span>Airport pickup</span>
+            <strong>Rs. 1200</strong>
+          </label>
+
+          <label class="book-extra-item">
+            <input type="checkbox" class="book-extra" value="Camping kit" data-price="1800">
+            <span>Camping kit</span>
+            <strong>Rs. 1800</strong>
+          </label>
+
+          <label class="book-extra-item">
+            <input type="checkbox" class="book-extra" value="Extra bedding" data-price="900">
+            <span>Extra bedding</span>
+            <strong>Rs. 900</strong>
+          </label>
+        </div>
+      </div>
+
+      <div class="book-block">
+        <h3>Guest Details</h3>
+        <div class="book-grid">
+          <label class="book-field">
+            <span>Full Name</span>
+            <input type="text" id="guestName" value="Arun Kumar" placeholder="Enter full name">
+          </label>
+
+          <label class="book-field">
+            <span>Email Address</span>
+            <input type="email" id="guestEmail" value="arun@example.com" placeholder="Enter email">
+          </label>
+
+          <label class="book-field">
+            <span>Phone Number</span>
+            <input type="tel" id="guestPhone" value="+91 98765 43210" placeholder="Enter phone number">
+          </label>
+
+          <label class="book-field">
+            <span>Driving Licence ID</span>
+            <input type="text" id="licenceId" placeholder="Enter licence number">
+          </label>
+        </div>
+      </div>
+
+      <div class="book-block">
+        <h3>Pay Deposit Online</h3>
+        <p class="book-block-copy">Your booking is confirmed once the deposit is paid. The remaining balance is payable before pickup.</p>
+
+        <div class="book-payment-methods">
+          <label class="book-pay-option">
+            <input type="radio" name="paymentMethod" value="UPI" checked>
+            <span><i class="fa-solid fa-mobile-screen-button"></i> UPI</span>
+          </label>
+
+          <label class="book-pay-option">
+            <input type="radio" name="paymentMethod" value="Card">
+            <span><i class="fa-regular fa-credit-card"></i> Card</span>
+          </label>
+
+          <label class="book-pay-option">
+            <input type="radio" name="paymentMethod" value="Net Banking">
+            <span><i class="fa-solid fa-building-columns"></i> Net Banking</span>
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="book-submit-btn">Pay Deposit & Confirm Booking</button>
+      <p class="book-status" id="bookingStatus">Deposit payment secures your camper instantly after confirmation.</p>
+    </form>
+
+    <aside class="book-summary-card">
+      <div class="book-summary-head">
+        <span class="book-tag book-tag-accent">Step 2</span>
+        <h2>Booking Summary</h2>
+      </div>
+
+      <div class="book-summary-route">
+        <strong id="summaryRoute">Chennai to Ooty</strong>
+        <span id="summaryDates">10 Oct 2026 - 13 Oct 2026</span>
+      </div>
+
+      <div class="book-summary-list">
+        <div class="book-line">
+          <span>Guest</span>
+          <strong id="summaryGuest">Arun Kumar</strong>
+        </div>
+
+        <div class="book-line">
+          <span>Camper</span>
+          <strong id="summaryCamper">Classic Camper</strong>
+        </div>
+
+        <div class="book-line">
+          <span>Trip Duration</span>
+          <strong><span id="summaryDays">3</span> days</strong>
+        </div>
+
+        <div class="book-line">
+          <span>Daily Rate</span>
+          <strong>Rs. <span id="summaryRate">3500</span></strong>
+        </div>
+
+        <div class="book-line">
+          <span>Trip Cost</span>
+          <strong>Rs. <span id="summaryBase">10500</span></strong>
+        </div>
+
+        <div class="book-line">
+          <span>Extras</span>
+          <strong>Rs. <span id="summaryExtras">0</span></strong>
+        </div>
+      </div>
+
+      <div class="book-total-box">
+        <div class="book-line">
+          <span>Total Booking Value</span>
+          <strong>Rs. <span id="summaryTotal">10500</span></strong>
+        </div>
+        <div class="book-line book-line-highlight">
+          <span>Deposit Due Now</span>
+          <strong>Rs. <span id="summaryDeposit">2100</span></strong>
+        </div>
+        <div class="book-line">
+          <span>Balance Before Pickup</span>
+          <strong>Rs. <span id="summaryBalance">8400</span></strong>
+        </div>
+      </div>
+
+      <div class="book-note-box">
+        <h3>Important Payment Note</h3>
+        <p>
+          The deposit reserves your camper online. A refundable security deposit is collected separately at pickup after ID and van inspection.
+        </p>
+      </div>
+
+      <div class="book-payment-strip" aria-label="Accepted payment methods">
+        <i class="fa-brands fa-google-pay"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-solid fa-building-columns"></i>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<section class="book-benefits">
+  <div class="book-benefits-header">
+    <span class="book-kicker-soft">Why Book Here</span>
+    <h2>Deposit-First Booking That Feels Clear And Safe</h2>
+  </div>
+
+  <div class="book-benefits-grid">
+    <div class="book-benefit-card">
+      <i class="fa-solid fa-wallet"></i>
+      <h3>Reserve With A Smaller Upfront Payment</h3>
+      <p>Secure your camper today without paying the full trip value immediately.</p>
+    </div>
+
+    <div class="book-benefit-card">
+      <i class="fa-solid fa-shield-heart"></i>
+      <h3>Transparent Deposit Terms</h3>
+      <p>You always see the booking total, deposit due now, and balance due later.</p>
+    </div>
+
+    <div class="book-benefit-card">
+      <i class="fa-solid fa-headset"></i>
+      <h3>Support Before Pickup</h3>
+      <p>Our team confirms route details, documents, and pickup guidance after payment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="book-steps">
+  <div class="book-steps-header">
+    <span class="book-kicker-soft">Booking Flow</span>
+    <h2>How Online Deposit Booking Works</h2>
+  </div>
+
+  <div class="book-steps-grid">
+    <div class="book-step-card">
+      <span class="book-step-no">01</span>
+      <h3>Choose Trip Details</h3>
+      <p>Select your route, dates, travelers, and camper type.</p>
+    </div>
+
+    <div class="book-step-card">
+      <span class="book-step-no">02</span>
+      <h3>Pay Your Deposit</h3>
+      <p>Make the online deposit payment using UPI, card, or net banking.</p>
+    </div>
+
+    <div class="book-step-card">
+      <span class="book-step-no">03</span>
+      <h3>Receive Confirmation</h3>
+      <p>We confirm your booking and share the final pickup checklist and balance details.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="footer-col footer-location">
+      <a href="index.html" class="footer-brand" aria-label="Wander Vans home">
+        <img src="images/logo-img.png" alt="Wander Vans">
+      </a>
+      <h3>Our Location</h3>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Pickup hub at ECR Road, Chennai, Tamil Nadu, India.</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <p>+91 98765 43210<br>+91 91234 56789</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-regular fa-envelope"></i>
+        <p>support@wandervans.com</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Campers</h3>
+      <ul class="footer-list">
+        <li><a href="#">Camper Booking</a></li>
+        <li><a href="#">Beach Routes</a></li>
+        <li><a href="#">Hill Escapes</a></li>
+        <li><a href="#">Weekend Packages</a></li>
+        <li><a href="#">Route Planner</a></li>
+        <li><a href="#">Best Deals</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Information</h3>
+      <ul class="footer-list">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Booking Status</a></li>
+        <li><a href="#">Office Location</a></li>
+        <li><a href="#">Advanced Search</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Pickup Details</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-gallery-col">
+      <h3>Gallery</h3>
+      <div class="footer-gallery">
+        <img src="images/van1.jpg" alt="Camper by the road">
+        <img src="images/beach.jpg" alt="Beach road trip">
+        <img src="images/van2.jpg" alt="Traveler with camper">
+        <img src="images/trip1.jpg" alt="Coastal route">
+        <img src="images/mountain.jpg" alt="Mountain escape">
+        <img src="images/forest.jpg" alt="Forest camping">
+      </div>
+
+      <h4>Sign Up</h4>
+      <form class="footer-signup">
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button type="submit">Send</button>
+      </form>
+      <p class="footer-small">We share route ideas, not spam.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Wander Vans. All rights reserved.</p>
+    <div class="footer-payments" aria-label="Accepted payments">
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-brands fa-cc-amex"></i>
+      <i class="fa-brands fa-cc-paypal"></i>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const footerSignup = document.querySelector(".footer-signup");
+  const heroSlides = document.querySelectorAll(".hero-slide");
+  const heroDots = document.querySelectorAll(".hero-dot");
+  const heroPrev = document.querySelector(".hero-prev");
+  const heroNext = document.querySelector(".hero-next");
+  let currentSlide = 0;
+  let slideTimer;
+
+  function setSlide(index) {
+    heroSlides.forEach(function (slide, slideIndex) {
+      slide.classList.toggle("active", slideIndex === index);
+    });
+
+    heroDots.forEach(function (dot, dotIndex) {
+      dot.classList.toggle("active", dotIndex === index);
+    });
+
+    currentSlide = index;
+  }
+
+  function moveSlide(direction) {
+    const nextIndex = (currentSlide + direction + heroSlides.length) % heroSlides.length;
+    setSlide(nextIndex);
+  }
+
+  function resetSliderTimer() {
+    window.clearInterval(slideTimer);
+    slideTimer = window.setInterval(function () {
+      moveSlide(1);
+    }, 5000);
+  }
+
+  if (heroSlides.length && heroPrev && heroNext && heroDots.length) {
+    heroPrev.addEventListener("click", function () {
+      moveSlide(-1);
+      resetSliderTimer();
+    });
+
+    heroNext.addEventListener("click", function () {
+      moveSlide(1);
+      resetSliderTimer();
+    });
+
+    heroDots.forEach(function (dot, index) {
+      dot.addEventListener("click", function () {
+        setSlide(index);
+        resetSliderTimer();
+      });
+    });
+
+    setSlide(0);
+    resetSliderTimer();
+  }
+
+  if (footerSignup) {
+    footerSignup.addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+  }
+
+  document.getElementById("darkToggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+  });
+
+  document.getElementById("rtlToggle").addEventListener("click", function () {
+    const html = document.documentElement;
+    html.dir = html.dir === "rtl" ? "ltr" : "rtl";
+  });
+
+  const bookingForm = document.getElementById("bookingForm");
+  const pickupLocation = document.getElementById("pickupLocation");
+  const destination = document.getElementById("destination");
+  const pickupDate = document.getElementById("pickupDate");
+  const returnDate = document.getElementById("returnDate");
+  const guestName = document.getElementById("guestName");
+  const extras = document.querySelectorAll(".book-extra");
+  const camperOptions = document.querySelectorAll("input[name='camperType']");
+  const paymentOptions = document.querySelectorAll("input[name='paymentMethod']");
+  const bookingStatus = document.getElementById("bookingStatus");
+
+  const summaryRoute = document.getElementById("summaryRoute");
+  const summaryDates = document.getElementById("summaryDates");
+  const summaryGuest = document.getElementById("summaryGuest");
+  const summaryCamper = document.getElementById("summaryCamper");
+  const summaryDays = document.getElementById("summaryDays");
+  const summaryRate = document.getElementById("summaryRate");
+  const summaryBase = document.getElementById("summaryBase");
+  const summaryExtras = document.getElementById("summaryExtras");
+  const summaryTotal = document.getElementById("summaryTotal");
+  const summaryDeposit = document.getElementById("summaryDeposit");
+  const summaryBalance = document.getElementById("summaryBalance");
+
+  function formatDateValue(value) {
+    if (!value) {
+      return "Select dates";
+    }
+
+    const date = new Date(value + "T00:00:00");
+    return date.toLocaleDateString("en-IN", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric"
+    });
+  }
+
+  function getTripDays() {
+    if (!pickupDate.value || !returnDate.value) {
+      return 1;
+    }
+
+    const start = new Date(pickupDate.value + "T00:00:00");
+    const end = new Date(returnDate.value + "T00:00:00");
+    const diff = Math.round((end - start) / 86400000);
+
+    return diff > 0 ? diff : 1;
+  }
+
+  function updateBookingSummary() {
+    const selectedCamper = document.querySelector("input[name='camperType']:checked");
+    const dailyRate = Number(selectedCamper.dataset.rate || 0);
+    const days = getTripDays();
+    const extrasTotal = Array.from(extras).reduce(function (sum, extra) {
+      return extra.checked ? sum + Number(extra.dataset.price || 0) : sum;
+    }, 0);
+    const tripCost = dailyRate * days;
+    const total = tripCost + extrasTotal;
+    const depositDue = Math.max(1500, Math.round(total * 0.2));
+    const balanceDue = Math.max(total - depositDue, 0);
+
+    summaryRoute.textContent = (pickupLocation.value || "Pickup") + " to " + (destination.value || "Destination");
+    summaryDates.textContent = formatDateValue(pickupDate.value) + " - " + formatDateValue(returnDate.value);
+    summaryGuest.textContent = guestName.value || "Guest name";
+    summaryCamper.textContent = selectedCamper.value;
+    summaryDays.textContent = days;
+    summaryRate.textContent = dailyRate;
+    summaryBase.textContent = tripCost;
+    summaryExtras.textContent = extrasTotal;
+    summaryTotal.textContent = total;
+    summaryDeposit.textContent = depositDue;
+    summaryBalance.textContent = balanceDue;
+  }
+
+  bookingForm.addEventListener("input", updateBookingSummary);
+  bookingForm.addEventListener("change", updateBookingSummary);
+
+  bookingForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const selectedMethod = document.querySelector("input[name='paymentMethod']:checked");
+    bookingStatus.textContent = "Deposit payment request ready. " + selectedMethod.value + " selected for " + guestName.value + ".";
+  });
+
+  updateBookingSummary();
+</script>
+</body>
+</html>

@@ -1,0 +1,880 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Vans - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-left">
+    <span>Call: +91 98765 43210</span>
+    <span>Email: support@wandervans.com</span>
+  </div>
+
+  <div class="top-right">
+    <span>Follow Us:</span>
+    <a href="#" class="top-social"><i class="fa-brands fa-globe"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" class="top-social"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</div>
+
+<!-- MAIN NAVBAR -->
+<header class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="images/logo-img.png" alt="Wander Vans">
+  </div>
+
+  <!-- Menu -->
+  <nav class="menu">
+    <ul>
+      <li class="menu-dropdown">
+        <a href="index.html" class="active">Home <i class="fa-solid fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html" class="active">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="camper.html">Camper</a></li>
+      <li><a href="roadtrip.html">Roadtrip</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Right Controls -->
+  <div class="nav-right">
+    <button type="button" id="darkToggle" class="toggle-btn">Dark</button>
+    <button type="button" id="rtlToggle" class="toggle-btn">RTL</button>
+    <a href="login.html" class="btn secondary">Login</a>
+  </div>
+</header>
+
+<section class="hero-slider" aria-label="Featured road trips">
+  <div class="hero-slide active" style="background-image: url('images/hero.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-kicker">Vintage Road Escapes</span>
+      <h1>Superb Adventure Travel For Slow, Scenic Holidays</h1>
+      <p>Choose a classic camper, follow the coast or climb into the hills, and turn an ordinary weekend into a road trip that actually feels memorable.</p>
+      <div class="hero-actions">
+        <a href="#" class="hero-btn solid">Book Now</a>
+        <a href="#" class="hero-btn outline">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-slide" style="background-image: url('images/hero1.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-kicker">Coastal Routes</span>
+      <h2>Beach Drives, Sunset Stops, and Breezy Weekends</h2>
+      <p>Set out with your camper by the sea, pause for coffee and photo stops, and let the route stay flexible all the way to sunset.</p>
+      <div class="hero-actions">
+        <a href="#" class="hero-btn solid">Explore Routes</a>
+        <a href="#" class="hero-btn outline">See Campers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-slide" style="background-image: url('images/hero2.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-kicker">Hill Escapes</span>
+      <h2>Wake Up to Cooler Air and Open Mountain Roads</h2>
+      <p>Take the long curve into misty hills, camp closer to nature, and travel at a pace that feels restful instead of rushed.</p>
+      <div class="hero-actions">
+        <a href="#" class="hero-btn solid">Plan Trip</a>
+        <a href="#" class="hero-btn outline">View Details</a>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="hero-nav hero-prev" aria-label="Previous slide">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+  <button type="button" class="hero-nav hero-next" aria-label="Next slide">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+  <div class="hero-dots" aria-label="Slide navigation">
+    <button type="button" class="hero-dot active" aria-label="Go to slide 1"></button>
+    <button type="button" class="hero-dot" aria-label="Go to slide 2"></button>
+    <button type="button" class="hero-dot" aria-label="Go to slide 3"></button>
+  </div>
+</section>
+<section class="explore">
+  <div class="explore-container">
+    <div class="explore-left">
+      <span class="explore-kicker">Explore More</span>
+      <h2>Explore Your World In A Road Trip Rhythm</h2>
+
+      <p>Choose a route that fits your pace, from sunrise coast drives to cooler hill escapes, and let the van shape the journey around you.</p>
+
+      <p>Every trip is planned for slower mornings, scenic stops, and flexible detours that feel personal instead of packed.</p>
+
+      <a href="#" class="btn primary">Explore Now</a>
+
+      <div class="route-trail" aria-hidden="true">
+        <span class="route-stop route-stop-start">Chennai</span>
+        <span class="route-line"></span>
+        <span class="route-pin"><i class="fa-solid fa-location-dot"></i></span>
+        <span class="route-plane"><i class="fa-solid fa-plane-up"></i></span>
+        <span class="route-stop route-stop-end">Ooty</span>
+      </div>
+    </div>
+
+    <div class="explore-center">
+      <div class="explore-orb">
+        <img src="images/van2.jpg" alt="Traveler standing by camper van">
+      </div>
+
+      <div class="explore-card explore-card-top">
+        <img src="images/beach.jpg" alt="Beach route">
+        <span>Beach Escape</span>
+      </div>
+
+      <div class="explore-card explore-card-left">
+        <img src="images/city.jpg" alt="City route">
+        <span>City Stop</span>
+      </div>
+
+      <div class="explore-card explore-card-bottom">
+        <img src="images/mountain.jpg" alt="Mountain route">
+        <span>Hill Drive</span>
+      </div>
+
+      <div class="explore-stat">
+        <strong>3 Signature Routes</strong>
+        <span>Coast, city, and hills in one travel-ready lineup.</span>
+      </div>
+    </div>
+
+    <div class="explore-right">
+      <h3>Trip Highlights</h3>
+
+      <p>Built for travelers who want flexible routes, easy booking, and a setup that feels road-ready from the first stop.</p>
+
+      <div class="explore-features">
+        <article class="explore-feature">
+          <i class="fa-solid fa-road"></i>
+          <div>
+            <h4>Scenic Routes</h4>
+            <p>Curated drives for coastlines, hill roads, and weekend loops.</p>
+          </div>
+        </article>
+
+        <article class="explore-feature">
+          <i class="fa-solid fa-van-shuttle"></i>
+          <div>
+            <h4>Vintage Fleet</h4>
+            <p>Classic campers with practical interiors and road-trip comfort.</p>
+          </div>
+        </article>
+
+        <article class="explore-feature">
+          <i class="fa-solid fa-headset"></i>
+          <div>
+            <h4>Support On Road</h4>
+            <p>Friendly help before pickup, during the trip, and after return.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="destinations">
+
+  <div class="dest-container">
+
+    <!-- Card 1 -->
+    <div class="dest-card">
+      <img src="images/fort.jpg" alt="">
+      <div class="overlay">
+        <h3>Forts</h3>
+        <h4>Explore History</h4>
+        <p>Discover ancient places and cultural heritage.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="dest-card">
+      <img src="images/cities.jpg" alt="">
+      <div class="overlay">
+        <h3>Cities</h3>
+        <h4>Urban Life</h4>
+        <p>Experience vibrant city adventures and nightlife.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="dest-card">
+      <img src="images/desert.jpg" alt="">
+      <div class="overlay">
+        <h3>Desert</h3>
+        <h4>Golden Sands</h4>
+        <p>Enjoy thrilling desert rides and scenic views.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="dest-card">
+      <img src="images/beaches.jpg" alt="">
+      <div class="overlay">
+        <h3>Beaches</h3>
+        <h4>Relax & Chill</h4>
+        <p>Feel the breeze and enjoy peaceful beach vibes.</p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="dest-card">
+      <img src="images/island.jpg" alt="">
+      <div class="overlay">
+        <h3>Island</h3>
+        <h4>Tropical Escape</h4>
+        <p>Explore exotic islands and crystal clear waters.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section class="search-section">
+
+  <!-- AIRPLANE PATH -->
+  <div class="flight-path">
+    <span class="plane plane1">✈️</span>
+    <span class="plane plane2">✈️</span>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="search-content">
+    <h2>Plan Your Perfect Road Trip</h2>
+
+    <p>
+      Discover destinations, choose your camper, and start your journey with ease.
+    </p>
+
+    <!-- SEARCH BOX -->
+    <div class="search-box">
+      <input type="text" placeholder="Search destination...">
+      <button>Search</button>
+    </div>
+
+    <!-- POPULAR -->
+    <div class="popular">
+      <span>Popular:</span>
+      <a href="#">Ooty</a>
+      <a href="#">Goa</a>
+      <a href="#">Pondicherry</a>
+      <a href="#">Coorg</a>
+    </div>
+
+  </div>
+
+</section>
+<!-- FONT AWESOME -->
+<section class="packages">
+
+  <h2>Pick Your Favourite Packages</h2>
+  <p class="subtitle">
+    Choose from our best travel experiences and enjoy unforgettable journeys.
+  </p>
+
+  <div class="package-container">
+
+    <!-- CARD 1 -->
+    <div class="package-card">
+
+      <div class="card-img">
+        <img src="images/trip-1.jpg" alt="">
+        <span class="tag">TREKKING</span>
+
+        <div class="corner-icon">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h3>Mountain Magic Package</h3>
+
+        <p class="location">
+          <i class="fa-solid fa-location-dot"></i> United Kingdom
+        </p>
+
+        <p class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          1 review
+        </p>
+
+        <p class="short-text">
+          Discover scenic mountains and adventure trails.
+        </p>
+
+        <p class="full-text">
+          Experience breathtaking views, trekking routes, and unforgettable journeys
+          through nature with full comfort and guidance.
+        </p>
+
+        <hr>
+
+        <div class="bottom">
+          <a href="#" class="btn">More Details</a>
+          <span class="price">From ₹33,300</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="package-card">
+
+      <div class="card-img">
+        <img src="images/trip-2.jpg" alt="">
+        <span class="tag">CITY TOUR</span>
+
+        <div class="corner-icon">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h3>Coastal Charm Tour</h3>
+
+        <p class="location">
+          <i class="fa-solid fa-location-dot"></i> Canada
+        </p>
+
+        <p class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          1 review
+        </p>
+
+        <p class="short-text">
+          Explore city life and modern travel experiences.
+        </p>
+
+        <p class="full-text">
+          Enjoy guided city tours, iconic landmarks, and unforgettable urban adventures
+          with premium comfort.
+        </p>
+
+        <hr>
+
+        <div class="bottom">
+          <a href="#" class="btn">More Details</a>
+          <span class="price">From ₹28,600</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="package-card">
+
+      <div class="card-img">
+        <img src="images/trip-3.jpg" alt="">
+        <span class="tag">SEA COAST</span>
+
+        <div class="corner-icon">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+      </div>
+
+      <div class="card-content">
+        <h3>Island Paradise Trip</h3>
+
+        <p class="location">
+          <i class="fa-solid fa-location-dot"></i> Greece
+        </p>
+
+        <p class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          1 review
+        </p>
+
+        <p class="short-text">
+          Relax at beautiful beaches and enjoy coastal views.
+        </p>
+
+        <p class="full-text">
+          Discover crystal clear waters, island adventures, and peaceful relaxation
+          in a tropical paradise.
+        </p>
+
+        <hr>
+
+        <div class="bottom">
+          <a href="#" class="btn">More Details</a>
+          <span class="price">From ₹30,500</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="experience">
+
+  <!-- FLOATING PHOTOS -->
+  <div class="floating-images">
+    <img src="images/float-1.jpg" class="img img1" alt="Travelers">
+    <img src="images/float-2.jpg" class="img img2" alt="Travelers with map">
+  </div>
+
+  <!-- FLIGHT PATH -->
+  <div class="exp-flight">
+    <span class="exp-plane exp-plane-top"><i class="fa-solid fa-plane-up"></i></span>
+    <svg class="exp-dash" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 80 Q200 20 350 160 Q450 260 600 200" stroke="white" stroke-width="2" stroke-dasharray="10 8" fill="none" opacity="0.5"/>
+    </svg>
+    <span class="exp-pin"><i class="fa-solid fa-location-dot"></i></span>
+    <span class="exp-plane exp-plane-bottom"><i class="fa-solid fa-plane-up"></i></span>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="experience-content">
+    <h2>Experience The Travel Happiness With Your Family &amp; Friends.</h2>
+    <p>Pick a van, choose your route, and hit the road. Every trip is built around comfort, flexibility, and moments worth remembering with the people you love.</p>
+
+    <div class="features">
+      <div><i class="fa-solid fa-user"></i> Local Tour Guide</div>
+      <div><i class="fa-solid fa-camera"></i> Beautiful Places</div>
+      <div><i class="fa-solid fa-suitcase"></i> Perfect Hotels</div>
+      <div><i class="fa-solid fa-umbrella-beach"></i> Resorts &amp; Beaches</div>
+    </div>
+
+    <a href="#" class="btn exp-btn">Shop Now</a>
+  </div>
+
+</section>
+<!-- FONT AWESOME -->
+
+<section class="family-section">
+
+  <!-- BACKGROUND -->
+  <div class="family-bg"></div>
+
+  <!-- TOP TAG -->
+  <div class="family-top">
+    <span class="family-tag">TRAVEL WITH LOVED ONES</span>
+    <h2>Take Pleasure In A Budget-Friendly Trip</h2>
+    <p>Plan your dream vacation with comfort and affordability. Explore destinations, enjoy activities, and travel with your loved ones.</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="family-main">
+
+    <!-- LEFT STATS COLUMN -->
+    <div class="family-stats-col">
+      <div class="family-stat-card">
+        <i class="fa-solid fa-plane"></i>
+        <h3 class="counter" data-target="100">0</h3>
+        <p>Vacation Packages</p>
+      </div>
+      <div class="family-stat-card">
+        <i class="fa-solid fa-compass"></i>
+        <h3 class="counter" data-target="100">0</h3>
+        <p>Adventure Activities</p>
+      </div>
+    </div>
+
+    <!-- CENTER IMAGE -->
+    <div class="family-img-wrap">
+      <img src="images/family.png" alt="Family Travel">
+      <div class="family-img-badge">
+        <i class="fa-solid fa-heart"></i>
+        <span>Family Friendly</span>
+      </div>
+    </div>
+
+    <!-- RIGHT STATS COLUMN -->
+    <div class="family-stats-col">
+      <div class="family-stat-card">
+        <i class="fa-solid fa-binoculars"></i>
+        <h3 class="counter" data-target="50">0</h3>
+        <p>Tourist Guides</p>
+      </div>
+      <div class="family-stat-card">
+        <i class="fa-solid fa-globe"></i>
+        <h3 class="counter" data-target="1080">0</h3>
+        <p>Worldwide Branches</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM FEATURES -->
+  <div class="family-features">
+    <div class="family-feature">
+      <i class="fa-solid fa-shield-halved"></i>
+      <span>Safe Travel</span>
+    </div>
+    <div class="family-feature">
+      <i class="fa-solid fa-wallet"></i>
+      <span>Budget Friendly</span>
+    </div>
+    <div class="family-feature">
+      <i class="fa-solid fa-headset"></i>
+      <span>24/7 Support</span>
+    </div>
+    <div class="family-feature">
+      <i class="fa-solid fa-star"></i>
+      <span>Top Rated</span>
+    </div>
+    <div class="family-feature">
+      <i class="fa-solid fa-map-location-dot"></i>
+      <span>Custom Routes</span>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="family-cta">
+    <a href="#" class="btn primary">Start Your Journey</a>
+  </div>
+
+</section>
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<section class="featured">
+
+  <h4 class="sub">Tour Essentials</h4>
+  <h2>Featured Collections</h2>
+
+  <div class="feature-grid">
+
+    <!-- CARD -->
+    <div class="card">
+      <div class="img-box">
+        <img src="images/hiking.jpg" alt="">
+
+        <!-- DISCOUNT -->
+        <span class="badge">OFF 9%</span>
+
+        <!-- HOVER ICONS -->
+        <div class="overlay">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+
+      <div class="info">
+        <h3>HIKING</h3>
+        <div class="price">$165.00</div>
+      </div>
+    </div>
+
+    <!-- COPY SAME CARD 5 MORE TIMES -->
+    <div class="card">
+      <div class="img-box">
+        <img src="images/wild safari.jpg" alt="">
+        <span class="badge">OFF 9%</span>
+        <div class="overlay">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h3>WILD SAFARI</h3>
+        <div class="price">$200.00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-box">
+        <img src="images/climbing.jpg" alt="">
+        <div class="overlay">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h3>MOUNTAIN CLIMBING</h3>
+        <div class="price">$200.00</div>
+      </div>
+    </div>
+
+    <!-- SECOND ROW -->
+    <div class="card">
+      <div class="img-box">
+        <img src="images/camping.jpg" alt="">
+        <div class="overlay">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h3>CAMPING</h3>
+        <div class="price">$120.00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-box">
+        <img src="images/forest tour.jpg" alt="">
+        <div class="overlay">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h3>FOREST TOUR</h3>
+        <div class="price">$180.00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img-box">
+        <img src="images/adventure.jpg" alt="">
+        <div class="overlay">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+      <div class="info">
+        <h3>ADVENTURE</h3>
+        <div class="price">$150.00</div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- FONT AWESOME -->
+
+
+<section class="cta-feature">
+  <div class="cta-feature-inner">
+    <div class="cta-feature-boxes">
+      <div class="feature-box"><i class="fa-solid fa-anchor"></i><h3>ZipZap Travel</h3></div>
+      <div class="feature-box"><i class="fa-solid fa-sailboat"></i><h3>Boat Travel</h3></div>
+      <div class="feature-box"><i class="fa-solid fa-umbrella-beach"></i><h3>Island Travel</h3></div>
+      <div class="feature-box"><i class="fa-solid fa-tree"></i><h3>Forest Travel</h3></div>
+    </div>
+    <div class="cta-text">
+      <h2>Hit the Road with Your Perfect Camper and Explore Freely</h2>
+      <p>Enjoy every mile with comfort, style, and adventure. Book your vintage van and start your journey today.</p>
+      <a href="#" class="cta-btn">Book To Start</a>
+    </div>
+  </div>
+</section>
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="footer-col footer-location">
+      <a href="index.html" class="footer-brand" aria-label="Wander Vans home">
+        <img src="images/logo-img.png" alt="Wander Vans">
+      </a>
+      <h3>Our Location</h3>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Pickup hub at ECR Road, Chennai, Tamil Nadu, India.</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <p>+91 98765 43210<br>+91 91234 56789</p>
+      </div>
+
+      <div class="footer-contact-item">
+        <i class="fa-regular fa-envelope"></i>
+        <p>support@wandervans.com</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Campers</h3>
+      <ul class="footer-list">
+        <li><a href="#">Camper Booking</a></li>
+        <li><a href="#">Beach Routes</a></li>
+        <li><a href="#">Hill Escapes</a></li>
+        <li><a href="#">Weekend Packages</a></li>
+        <li><a href="#">Route Planner</a></li>
+        <li><a href="#">Best Deals</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Information</h3>
+      <ul class="footer-list">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Booking Status</a></li>
+        <li><a href="#">Office Location</a></li>
+        <li><a href="#">Advanced Search</a></li>
+        <li><a href="#">Cancellation Policy</a></li>
+        <li><a href="#">Pickup Details</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-gallery-col">
+      <h3>Gallery</h3>
+      <div class="footer-gallery">
+        <img src="images/van1.jpg" alt="Camper by the road">
+        <img src="images/beach.jpg" alt="Beach road trip">
+        <img src="images/van2.jpg" alt="Traveler with camper">
+        <img src="images/trip1.jpg" alt="Coastal route">
+        <img src="images/mountain.jpg" alt="Mountain escape">
+        <img src="images/forest.jpg" alt="Forest camping">
+      </div>
+
+      <h4>Sign Up</h4>
+      <form class="footer-signup">
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button type="submit">Send</button>
+      </form>
+      <p class="footer-small">We share route ideas, not spam.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Wander Vans. All rights reserved.</p>
+    <div class="footer-payments" aria-label="Accepted payments">
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-brands fa-cc-amex"></i>
+      <i class="fa-brands fa-cc-paypal"></i>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const footerSignup = document.querySelector(".footer-signup");
+  const heroSlides = document.querySelectorAll(".hero-slide");
+  const heroDots = document.querySelectorAll(".hero-dot");
+  const heroPrev = document.querySelector(".hero-prev");
+  const heroNext = document.querySelector(".hero-next");
+  let currentSlide = 0;
+  let slideTimer;
+
+  function setSlide(index) {
+    heroSlides.forEach(function (slide, slideIndex) {
+      slide.classList.toggle("active", slideIndex === index);
+    });
+
+    heroDots.forEach(function (dot, dotIndex) {
+      dot.classList.toggle("active", dotIndex === index);
+    });
+
+    currentSlide = index;
+  }
+
+  function moveSlide(direction) {
+    const nextIndex = (currentSlide + direction + heroSlides.length) % heroSlides.length;
+    setSlide(nextIndex);
+  }
+
+  function resetSliderTimer() {
+    window.clearInterval(slideTimer);
+    slideTimer = window.setInterval(function () {
+      moveSlide(1);
+    }, 5000);
+  }
+
+  heroPrev.addEventListener("click", function () {
+    moveSlide(-1);
+    resetSliderTimer();
+  });
+
+  heroNext.addEventListener("click", function () {
+    moveSlide(1);
+    resetSliderTimer();
+  });
+
+  heroDots.forEach(function (dot, index) {
+    dot.addEventListener("click", function () {
+      setSlide(index);
+      resetSliderTimer();
+    });
+  });
+
+  setSlide(0);
+  resetSliderTimer();
+
+  if (footerSignup) {
+    footerSignup.addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+  }
+
+  document.getElementById("darkToggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark");
+  });
+
+  document.getElementById("rtlToggle").addEventListener("click", function () {
+    const html = document.documentElement;
+    html.dir = html.dir === "rtl" ? "ltr" : "rtl";
+  });
+</script>
+<script>
+const counters = document.querySelectorAll('.counter');
+let started = false;
+
+function startCounting() {
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    let count = 0;
+
+    const update = () => {
+      const increment = target / 100;
+
+      if (count < target) {
+        count += increment;
+        counter.innerText = Math.ceil(count);
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    update();
+  });
+}
+
+window.addEventListener('scroll', () => {
+  const section = document.querySelector('.family-section');
+  const sectionTop = section.offsetTop;
+  const screenHeight = window.innerHeight;
+
+  if (!started && window.scrollY > sectionTop - screenHeight + 100) {
+    startCounting();
+    started = true;
+  }
+});
+</script>
+</body>
+</html>

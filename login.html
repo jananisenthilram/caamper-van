@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Wander Vans</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="login-page">
+
+  <!-- LEFT IMAGE -->
+  <div class="login-image">
+    <img src="images/login-bg.jpg" alt="Travel">
+    <div class="login-image-overlay">
+      <div class="login-image-content">
+        <h2>Your Next Adventure Awaits</h2>
+        <p>Book a camper and explore the open road at your own pace.</p>
+        <div class="login-features">
+          <div class="login-feature"><i class="fa-solid fa-road"></i><span>500+ Routes</span></div>
+          <div class="login-feature"><i class="fa-solid fa-van-shuttle"></i><span>50+ Campers</span></div>
+          <div class="login-feature"><i class="fa-solid fa-headset"></i><span>24/7 Support</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="login-form-wrap">
+
+    <!-- LOGO -->
+    <a href="index.html" class="login-logo">
+      <img src="images/logo-img.png" alt="Wander Vans">
+    </a>
+
+    <div class="login-form-box">
+      <span class="login-tag">WELCOME BACK</span>
+      <h2>Login to Your Account</h2>
+      <p>Continue your road trip journey</p>
+
+      <form class="login-form">
+
+        <div class="login-input-group">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="login-input-group">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <i class="fa-solid fa-eye login-input-action" id="togglePassword"></i>
+        </div>
+
+        <div class="login-options">
+          <label class="login-remember">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#" class="login-forgot">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Login
+        </button>
+
+        <div class="login-divider"><span>or continue with</span></div>
+
+        <div class="login-socials">
+          <button type="button" class="login-social-btn">
+            <i class="fa-brands fa-google"></i> Google
+          </button>
+          <button type="button" class="login-social-btn">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+          </button>
+          <button type="button" class="login-social-btn">
+            <i class="fa-brands fa-apple"></i> Apple
+          </button>
+        </div>
+
+        <p class="login-signup">
+          Don't have an account? <a href="signup.html">Sign up free</a>
+        </p>
+
+      </form>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+document.getElementById("togglePassword").addEventListener("click", function () {
+  const pwd = document.getElementById("loginPassword");
+  const icon = this;
+  if (pwd.type === "password") {
+    pwd.type = "text";
+    icon.classList.replace("fa-eye", "fa-eye-slash");
+  } else {
+    pwd.type = "password";
+    icon.classList.replace("fa-eye-slash", "fa-eye");
+  }
+});
+</script>
+
+</body>
+</html>
