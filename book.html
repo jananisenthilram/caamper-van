@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/site-preferences.js"></script>
   <title>Wander Vans - Book Now</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -26,11 +27,11 @@
 <!-- MAIN NAVBAR -->
 <header class="navbar">
 
-  <div class="logo">
+  <a href="index.html" class="logo" aria-label="Wander Vans home">
     <img src="images/logo-img.png" alt="Wander Vans">
-  </div>
+  </a>
 
-  <nav class="menu">
+  <nav class="menu" id="siteMenu">
     <ul>
       <li class="menu-dropdown">
         <a href="index.html">Home <i class="fa-solid fa-angle-down"></i></a>
@@ -46,8 +47,18 @@
       <li><a href="book.html" class="active">Book Now</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <div class="mobile-actions">
+      <a href="login.html" class="btn secondary">Login</a>
+      <div class="mobile-toggle-row">
+        <button type="button" class="mobile-dark-btn toggle-btn">Dark</button>
+        <button type="button" class="mobile-rtl-btn toggle-btn">RTL</button>
+      </div>
+    </div>
   </nav>
 
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-controls="siteMenu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
   <div class="nav-right">
     <button type="button" id="darkToggle" class="toggle-btn">Dark</button>
     <button type="button" id="rtlToggle" class="toggle-btn">RTL</button>
@@ -598,6 +609,72 @@
   });
 
   updateBookingSummary();
+</script>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+var scrollBtn = document.getElementById("scrollTopBtn");
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("visible");
+  } else {
+    scrollBtn.classList.remove("visible");
+  }
+});
+scrollBtn.addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+<script>
+var ham = document.getElementById("hamburger");
+var menu = document.querySelector(".menu");
+if (ham && menu) {
+  function closeMenu() {
+    ham.classList.remove("open");
+    menu.classList.remove("open");
+    ham.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+  }
+
+  ham.addEventListener("click", function() {
+    var isOpen = ham.classList.toggle("open");
+    menu.classList.toggle("open");
+    ham.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    document.body.classList.toggle("menu-open", isOpen);
+  });
+
+  document.querySelectorAll(".menu a, .mobile-actions a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      closeMenu();
+    });
+  });
+
+  document.addEventListener("click", function(event) {
+    if (!menu.classList.contains("open")) return;
+    if (menu.contains(event.target) || ham.contains(event.target)) return;
+    closeMenu();
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", function() {
+    if (window.innerWidth > 1024) {
+      closeMenu();
+    }
+  });
+}
+var mDark = document.querySelector(".mobile-dark-btn");
+var mRtl = document.querySelector(".mobile-rtl-btn");
+if (mDark) mDark.addEventListener("click", function() { document.body.classList.toggle("dark"); });
+if (mRtl) mRtl.addEventListener("click", function() { var h = document.documentElement; h.dir = h.dir === "rtl" ? "ltr" : "rtl"; });
 </script>
 </body>
 </html>
