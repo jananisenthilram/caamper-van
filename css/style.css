@@ -18,6 +18,9 @@ body {
   --reveal-distance: 34px;
   --reveal-duration: 760ms;
   --reveal-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --loader-backdrop: rgba(255, 244, 230, 0.92);
+  --loader-ring: #d95d39;
+  --loader-ring-muted: rgba(74, 44, 42, 0.14);
 }
 
 * {
@@ -29,6 +32,50 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+html.site-loading {
+  overflow: hidden;
+}
+
+html.site-loading body::before,
+html.site-loading body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+html.site-loading body::before {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255, 216, 177, 0.45), transparent 16%),
+    var(--loader-backdrop);
+}
+
+html.site-loading body::after {
+  inset: 50% auto auto 50%;
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  border-radius: 50%;
+  border: 4px solid var(--loader-ring-muted);
+  border-top-color: var(--loader-ring);
+  box-shadow: 0 10px 24px rgba(217, 93, 57, 0.18);
+  animation: siteSpinner 0.75s linear infinite;
+}
+
+body.dark {
+  --loader-backdrop: rgba(23, 18, 16, 0.92);
+  --loader-ring: #ff7b54;
+  --loader-ring-muted: rgba(255, 255, 255, 0.14);
+}
+
+@keyframes siteSpinner {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* TOP BAR */
