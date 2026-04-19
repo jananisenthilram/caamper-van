@@ -3529,7 +3529,7 @@ html[dir="rtl"] .dropdown-menu {
   border-radius: 12px;
   max-width: 280px;
   transition: 0.4s;
-  opacity: 0.82;
+  opacity: 1;
   transform: scale(0.9);
   text-align: center;
   color: #4a2c2a;
@@ -10389,7 +10389,7 @@ body.dark .rating i {
 }
 
 body.dark .review-card {
-  opacity: 0.72;
+  opacity: 1;
 }
 
 body.dark .review-card p {
@@ -11907,6 +11907,12 @@ body:not(.dark) .mv-card:last-child p,
 body:not(.dark) .stats-subtext,
 body:not(.dark) .stat-box:first-child p {
   color: rgba(255, 244, 230, 0.86);
+}
+
+body:not(.dark) .review-card.active p,
+body:not(.dark) .review-card.active h4,
+body:not(.dark) .review-card.active span {
+  color: #fff4ec;
 }
 
 @media (max-width: 1024px) {
