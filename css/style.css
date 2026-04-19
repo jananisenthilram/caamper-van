@@ -11630,6 +11630,10 @@ body:not(.dark) :is(
   line-height: 1.7;
 }
 
+body:not(.dark) .mv-card:last-child p {
+  color: rgba(255, 244, 230, 0.86);
+}
+
 @media (max-width: 1024px) {
   body {
     font-size: 15.5px;
