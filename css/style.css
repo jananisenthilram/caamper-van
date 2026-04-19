@@ -7782,12 +7782,15 @@ html[dir="rtl"] .choose-item::after {
   z-index: 1;
   display: inline-flex;
   align-items: center;
+  align-self: flex-start;
+  justify-content: center;
   padding: 6px 12px;
   border-radius: 999px;
   background: rgba(217, 93, 57, 0.12);
   color: #d95d39;
   font-size: 12px;
   font-weight: 700;
+  line-height: 1.35;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   min-height: 42px;
@@ -7800,6 +7803,7 @@ html[dir="rtl"] .choose-item::after {
   color: #6d5d55;
   font-size: 15px;
   line-height: 1.75;
+  flex-grow: 1;
   min-height: calc(1.75em * 4);
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9437,10 +9441,14 @@ html[dir="rtl"] .about-cta-buttons {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  align-items: stretch;
 }
 
 .book-benefit-card,
 .book-step-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 28px 26px;
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.82);
@@ -9463,6 +9471,7 @@ html[dir="rtl"] .about-cta-buttons {
 
 .book-step-no {
   display: inline-flex;
+  align-self: flex-start;
   align-items: center;
   justify-content: center;
   width: 58px;
@@ -9482,6 +9491,11 @@ html[dir="rtl"] .about-cta-buttons {
   color: #4a2c2a;
   font-size: 24px;
   line-height: 1.25;
+  min-height: calc(1.25em * 2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .book-benefit-card p,
@@ -9489,6 +9503,12 @@ html[dir="rtl"] .about-cta-buttons {
   margin: 0;
   color: #6d5d55;
   line-height: 1.75;
+  flex-grow: 1;
+  min-height: calc(1.75em * 4);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 
 body.dark .book-layout-section,
@@ -9563,6 +9583,13 @@ html[dir="rtl"] .book-step-card {
   .book-benefits-grid,
   .book-steps-grid {
     grid-template-columns: 1fr;
+  }
+
+  .book-benefit-card h3,
+  .book-step-card h3,
+  .book-benefit-card p,
+  .book-step-card p {
+    min-height: 0;
   }
 }
 
