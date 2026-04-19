@@ -10500,12 +10500,17 @@ body.dark .cta-form button:hover {
 
 body.dark .destinations,
 body.dark .search-section,
-body.dark .cta-feature,
 body.dark .avail-section,
 body.dark .route-premium {
   background:
     radial-gradient(circle at top left, rgba(255, 123, 84, 0.12), transparent 24%),
     linear-gradient(180deg, #171210 0%, #241d1b 100%);
+}
+
+body.dark .cta-feature {
+  background:
+    linear-gradient(rgba(23, 18, 16, 0.52), rgba(36, 29, 27, 0.58)),
+    url('../images/beach.jpg') center/cover no-repeat;
 }
 
 body.dark .search-section {
