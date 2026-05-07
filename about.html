@@ -246,25 +246,25 @@
 
     <div class="stat-box">
       <span class="stat-label">Adventures</span>
-      <h3 class="count" data-target="500">0</h3>
+      <h3 class="count" data-target="500" data-suffix="+">0+</h3>
       <p>Trips Completed</p>
     </div>
 
     <div class="stat-box">
       <span class="stat-label">Travelers</span>
-      <h3 class="count" data-target="1000">0</h3>
+      <h3 class="count" data-target="1000" data-suffix="+">0+</h3>
       <p>Happy Customers</p>
     </div>
 
     <div class="stat-box">
       <span class="stat-label">Destinations</span>
-      <h3 class="count" data-target="50">0</h3>
+      <h3 class="count" data-target="50" data-suffix="+">0+</h3>
       <p>Routes Covered</p>
     </div>
 
     <div class="stat-box">
       <span class="stat-label">Experience</span>
-      <h3 class="count" data-target="10">0</h3>
+      <h3 class="count" data-target="10" data-suffix="+">0+</h3>
       <p>Years Experience</p>
     </div>
 
@@ -458,15 +458,16 @@ const counters = document.querySelectorAll(".count");
 counters.forEach(counter => {
   const update = () => {
     const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
+    const suffix = counter.getAttribute("data-suffix") || "";
+    const count = parseInt(counter.innerText, 10) || 0;
 
     const increment = target / 100;
 
     if (count < target) {
-      counter.innerText = Math.ceil(count + increment);
+      counter.innerText = Math.ceil(count + increment) + suffix;
       setTimeout(update, 20);
     } else {
-      counter.innerText = target;
+      counter.innerText = target + suffix;
     }
   };
 
