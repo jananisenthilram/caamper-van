@@ -1,0 +1,363 @@
+/* ================================
+   GLOBAL ANIMATIONS - ALL PAGES
+   ================================ */
+
+/* KEYFRAMES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes slideInNav {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.3); }
+  50%  { opacity: 1; transform: scale(1.05); }
+  70%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+/* ================================
+   NAVBAR
+   ================================ */
+.navbar {
+  animation: fadeInDown 0.6s ease both;
+}
+
+.nav-links li {
+  animation: fadeInDown 0.5s ease both;
+}
+.nav-links li:nth-child(1) { animation-delay: 0.1s; }
+.nav-links li:nth-child(2) { animation-delay: 0.15s; }
+.nav-links li:nth-child(3) { animation-delay: 0.2s; }
+.nav-links li:nth-child(4) { animation-delay: 0.25s; }
+.nav-links li:nth-child(5) { animation-delay: 0.3s; }
+.nav-links li:nth-child(6) { animation-delay: 0.35s; }
+.nav-links li:nth-child(7) { animation-delay: 0.4s; }
+.nav-links li:nth-child(8) { animation-delay: 0.45s; }
+
+.logo {
+  animation: fadeInLeft 0.6s ease both;
+}
+
+.nav-btns, .nav-right {
+  animation: fadeInRight 0.6s ease both;
+}
+
+/* ================================
+   HERO / SLIDER CONTENT
+   ================================ */
+.content h1 {
+  animation: fadeInUp 0.8s ease 0.3s both;
+}
+
+.content p {
+  animation: fadeInUp 0.8s ease 0.5s both;
+}
+
+.content .btn {
+  animation: fadeInUp 0.8s ease 0.7s both;
+}
+
+/* HOME2 HERO */
+.classes-content h1 {
+  animation: fadeInUp 0.8s ease 0.3s both;
+}
+.classes-content p {
+  animation: fadeInUp 0.8s ease 0.5s both;
+}
+.classes-content .btn-primary {
+  animation: fadeInUp 0.8s ease 0.7s both;
+}
+
+/* ================================
+   SCROLL REVEAL - via .reveal class
+   (added by JS)
+   ================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-zoom {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-zoom.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ================================
+   CARDS HOVER ANIMATIONS
+   ================================ */
+.product-card,
+.why-box,
+.blog-card,
+.service-card,
+.process-card,
+.faq-item,
+.class-card,
+.review-card,
+.testi-card,
+.shopproduct-card,
+.pricing-card,
+.class-feature-box,
+.top-seller-card,
+.event-card,
+.order-product-card,
+.gallery-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover,
+.why-box:hover,
+.blog-card:hover,
+.service-card:hover,
+.process-card:hover,
+.class-card:hover,
+.review-card:hover,
+.testi-card:hover,
+.shopproduct-card:hover,
+.pricing-card:hover,
+.class-feature-box:hover,
+.top-seller-card:hover,
+.event-card:hover,
+.order-product-card:hover,
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* ================================
+   BUTTONS HOVER ANIMATION
+   ================================ */
+.btn,
+.btn-primary,
+.service-btn,
+.about-btn,
+.checkout-btn,
+.add-to-cart-btn,
+.join-btn,
+.deal-btn,
+.highlight-btn,
+.top-btn,
+.shop-btn,
+.reg-btn,
+.course-highlight-btn,
+.booking-form-box button,
+.contact-form button,
+.cta-btn {
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.service-btn:hover,
+.about-btn:hover,
+.checkout-btn:hover,
+.add-to-cart-btn:hover,
+.join-btn:hover,
+.deal-btn:hover,
+.highlight-btn:hover,
+.top-btn:hover,
+.shop-btn:hover,
+.reg-btn:hover,
+.course-highlight-btn:hover,
+.booking-form-box button:hover,
+.contact-form button:hover,
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* ================================
+   IMAGES HOVER ZOOM
+   ================================ */
+.blog-card img,
+.shopproduct-card img,
+.class-card img,
+.top-seller-card img,
+.event-card img,
+.order-product-card img,
+.testi-card img,
+.review-card img {
+  transition: transform 0.4s ease;
+  overflow: hidden;
+}
+
+.blog-card:hover img,
+.shopproduct-card:hover img,
+.class-card:hover img,
+.top-seller-card:hover img,
+.event-card:hover img,
+.order-product-card:hover img {
+  transform: scale(1.06);
+}
+
+/* ================================
+   LOGO FLOAT ANIMATION
+   ================================ */
+.footer-logo {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ================================
+   SOCIAL ICONS BOUNCE
+   ================================ */
+.socials a:hover,
+.social-icons i:hover,
+.reg-social i:hover {
+  animation: bounceIn 0.4s ease;
+}
+
+/* ================================
+   SCROLL TOP BUTTON PULSE
+   ================================ */
+#scrollTopBtn {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ================================
+   FEATURE ICONS FLOAT
+   ================================ */
+.feature-box i,
+.why-box i,
+.choose-feature-icon,
+.achievement-icon,
+.process-icon,
+.class-feature-box i,
+.contact-box i {
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover i,
+.why-box:hover i,
+.choose-feature:hover .choose-feature-icon,
+.achievement-item:hover .achievement-icon,
+.process-card:hover .process-icon,
+.class-feature-box:hover i,
+.contact-box:hover i {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+/* ================================
+   NAV LINKS UNDERLINE ANIMATION
+   ================================ */
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ================================
+   PAGE LOAD FADE IN
+   ================================ */
+body {
+  animation: fadeIn 0.5s ease both;
+}
+
+/* ================================
+   TOP BAR SLIDE DOWN
+   ================================ */
+.top-bar {
+  animation: fadeInDown 0.5s ease both;
+}
+
+/* ================================
+   FOOTER SECTIONS
+   ================================ */
+.footer-box {
+  transition: transform 0.3s ease;
+}
+
+.footer-box:hover {
+  transform: translateY(-4px);
+}

@@ -1,0 +1,331 @@
+/* ================================
+   RESPONSIVE - TABLET (max 900px)
+   ================================ */
+@media (max-width: 900px) {
+
+  .nav-links {
+    position: static;
+    order: 3;
+    width: 100%;
+    transform: none;
+  }
+
+  .nav-right {
+    order: 4;
+    width: 100%;
+  }
+
+  .nav-btns { display: none; }
+
+  .about-container,
+  .choose-container,
+  .classes-top,
+  .achievement-container,
+  .highlight-container,
+  .course-highlight-container { flex-direction: column; gap: 30px; }
+
+  .choose-right,
+  .classes-left { max-width: 100%; }
+
+  .big-card { width: 100%; }
+
+  .booking-container,
+  .team-grid { grid-template-columns: 1fr; }
+
+  .process-grid,
+  .product-grid,
+  .why-container,
+  .top-seller-grid,
+  .review-grid,
+  .testi-grid,
+  .gallery-grid,
+  .shopproduct-grid,
+  .class-grid,
+  .class-features-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .pricing-grid,
+  .service-container { grid-template-columns: 1fr; }
+
+  .contact-info-container { grid-template-columns: 1fr; }
+
+  .info-container { flex-direction: column; align-items: center; }
+
+  .footer-container { flex-direction: column; align-items: flex-start; }
+  body.rtl .footer-container { align-items: flex-end; }
+
+  .order-container { grid-template-columns: 1fr; }
+  .order-products { grid-template-columns: repeat(2, 1fr); }
+
+  .about-right { justify-content: center; }
+
+  .why-box {
+    width: auto;
+    padding: 22px 18px;
+  }
+}
+
+/* ================================
+   RESPONSIVE - MOBILE (max 600px)
+   ================================ */
+@media (max-width: 600px) {
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 { font-size: 18px; }
+
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+    padding: 8px 15px;
+  }
+
+  .navbar { padding: 10px 15px; }
+  .logo img { height: 50px; }
+
+  .hero-slider { height: 60vh; }
+  .classes-hero { height: 60vh; }
+  .content {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 30px);
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+  body.rtl .content {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .classes-content {
+    width: calc(100% - 96px);
+    max-width: 100%;
+    padding: 0;
+  }
+  .content h1 { font-size: 26px; }
+  .content p { font-size: 14px; }
+  .classes-content h1 { font-size: 26px; }
+  .classes-content p { font-size: 14px; }
+
+  .hero-slider .btn,
+  .promo-btn a {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 22px;
+  }
+
+  .prev,
+  .next,
+  .nav-prev,
+  .nav-next {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 56px;
+    padding: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .prev { left: 12px; }
+  .next { right: 12px; }
+  .nav-prev { left: 12px; }
+  .nav-next { right: 12px; }
+  body.rtl .prev {
+    left: auto;
+    right: 12px;
+  }
+  body.rtl .next {
+    right: auto;
+    left: 12px;
+  }
+  body.rtl .nav-prev {
+    left: auto;
+    right: 12px;
+  }
+  body.rtl .nav-next {
+    right: auto;
+    left: 12px;
+  }
+
+  .features { flex-direction: column; align-items: center; gap: 30px; }
+  .feature-box { width: 100%; max-width: 100%; }
+
+  .product-grid,
+  .why-container,
+  .blog-container,
+  .process-grid,
+  .testi-grid,
+  .gallery-grid,
+  .shopproduct-grid,
+  .top-seller-grid,
+  .review-grid,
+  .class-grid,
+  .class-features-grid,
+  .pricing-grid,
+  .chef-grid-container,
+  .approach-images { grid-template-columns: 1fr; }
+
+  .stats-container,
+  .service-container { grid-template-columns: 1fr; }
+
+  .about-container,
+  .choose-container,
+  .achievement-container,
+  .highlight-container,
+  .course-highlight-container { flex-direction: column; }
+
+  .about-right { flex-direction: column; align-items: center; }
+  .img1, .img2 { width: 100%; height: 220px; margin-top: 0; }
+
+  .choose-left { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .choose-right { max-width: 100%; }
+  .choose-features { grid-template-columns: 1fr; }
+
+  .team-grid { grid-template-columns: 1fr; }
+  .team-item { flex-direction: column; text-align: center; }
+  .team-image img { width: 100%; height: auto; }
+
+  .achievement-image img { height: 250px; }
+  .highlight-image img,
+  .course-highlight-img img { max-width: 100%; }
+
+  .booking-container { grid-template-columns: 1fr; }
+  .booking-row { flex-direction: column; }
+
+  .contact-info-container { grid-template-columns: 1fr; }
+  .form-row { flex-direction: column; }
+
+  .blog-wrapper { grid-template-columns: 1fr; padding: 40px 15px; }
+  .blog-row, .blog-row.reverse { flex-direction: column; }
+  .blog-img, .blog-content { width: 100%; }
+  .blog-img img { height: 200px; }
+
+  .highlight-list,
+  .course-highlight-list {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .highlight-list li,
+  .course-highlight-list li {
+    list-style-position: outside;
+  }
+
+  body.rtl .highlight-list,
+  body.rtl .course-highlight-list {
+    padding-left: 0;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .order-container { grid-template-columns: 1fr; }
+  .order-products { grid-template-columns: 1fr; }
+  .order-hero h1 { font-size: 24px; }
+  .order-cart { position: relative; top: 0; }
+  .form-row { grid-template-columns: 1fr; }
+
+  .footer-container { flex-direction: column; }
+  .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
+
+  .login-section { min-height: 100svh; height: auto; align-items: center; padding: 18px 12px; }
+  .login-container { flex-direction: column; width: min(100%, 420px); height: auto; margin: 0 auto; border-radius: 18px; }
+  .login-image { width: 100%; height: 300px; }
+  .login-image img { display: block; object-position: center bottom; }
+  .login-form { width: 100%; padding: 24px 16px 20px; }
+  .login-options { flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; }
+  .login-options label,
+  .forgot-link { white-space: nowrap; }
+  body.rtl .login-options { align-items: center; }
+  .reg-wrapper { min-height: 100vh; padding: 20px 15px; }
+  .reg-card { width: 100%; max-width: 360px; padding: 24px 18px; }
+
+  .promo-container { flex-direction: column; text-align: center; }
+
+  .grid-container { grid-template-columns: 1fr; }
+
+  .schedule-tabs { flex-wrap: wrap; }
+  .schedule-tabs button { flex: none; width: 48%; font-size: 12px; padding: 8px; }
+
+  .subscribe-form { flex-direction: column; align-items: center; }
+  .subscribe-form input { width: 100%; }
+
+  .info-container { flex-direction: column; align-items: center; }
+  .info-left { flex-direction: row; gap: 15px; }
+  .info-box { width: 140px; }
+
+  .class-row { flex-direction: column; text-align: center; }
+  .class-row button { margin-left: 0; }
+
+  .event-card { flex-direction: column; }
+  .event-card img { width: 100%; height: 180px; }
+
+  .classes-hero { height: 60vh; }
+  .classes-content h1 { font-size: 24px; }
+
+  .shop-hero,
+  .class-hero { height: 250px; padding: 0 15px; }
+
+  .about-hero { height: 220px; }
+
+  .contact-hero-bg { height: 250px; }
+
+  .blog-hero { height: 250px; }
+
+  .deal-banner { height: auto; padding: 60px 15px; }
+
+  .promo-text h2 { font-size: 22px; }
+
+  .section-title { font-size: 20px; }
+  .section-sub { font-size: 14px; }
+
+  .cta-content h2 { font-size: 20px; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+
+  .steps { flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .line { width: 40px; }
+
+  .pagination span { width: 32px; height: 32px; }
+}
+
+@media (max-width: 380px) {
+  .login-section {
+    padding: 16px 10px;
+    overflow-x: hidden;
+  }
+
+  .login-container {
+    width: 100%;
+  }
+
+  .login-form {
+    padding: 22px 14px 18px;
+  }
+
+  .login-options {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .login-options label,
+  .forgot-link {
+    white-space: nowrap;
+  }
+}
